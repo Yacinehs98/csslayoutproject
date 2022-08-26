@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        
+        body{
+            font-family: system-ui;
+            margin: 0px ;
+        }
+        nav img{
+            width: 270px;
+            padding-left: 180px;
+        }
+        nav{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color:white;
+            position: fixed;
+            box-shadow: 0px 0px 10px #000;
+            height: 60px;
+        }
+    
+        .nav div{
+            padding-right: 200px;
+        }
+     
+        .nav a{
+            text-decoration: none;
+            color: inherit;
+            color: #747881;
+            margin-left: 20px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .nav span a{
+            color: #00c3a5;
+        }
+        .sec1{
+            padding: 0px 170px;
+            color: #8a748a;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 500px;
+        }
+        .sec1 img{
+            margin-top: 80px;
+            width: 68px;
+            height: 68px;
+        }
+        #p1{
+            color: #00c3a5;
+            font-size: 35px;
+            font-weight: 300;
+        }
+        #towp{
+            display: flex;
+            justify-content: center;
+        }
+        #towp p{
+            line-height: 30px;
+            font-weight: 500;
+            width: fit-content;
+        }
+        .sec2{
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 180px;
+            color: white;
+            height: 300px;
+            padding-bottom: 20px;
+        }
+        .div{
+            border: 0px;
+            border-radius: 10px;
+            width: 320px;
+            height: 350px;
+        }
+        .div h1{
+            font-size: 30px;
+            font-weight: 400;
+            margin-left: 40px;
+        }
+        .div p{
+            font-size: 25px;
+            font-weight: 300;
+            margin: 0px 40px;
+        }
+        .vert{
+            background-color: #1ad1b9;
+        }
+        .blue{
+            background-color: #5190e2;
+        
+        }
+        .noir{
+            background-color: #323d49;
+        }
+        .sec3{
+            padding: 70px 180px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .divh1{
+            color: #00c3a5;
+            font-size: 27px;
+            font-weight: 300;
+            width: 300px;
+            margin-right: 30px;
+            
+        }
+        .divlogo{
+            width: 1200px;
+            float: right;
+        }
+        .divlogo img{
+            width: 150px;
+         
+            height: 70px;
+        }
+        .sec4{
+            background-color: #d9f7f6;
+            padding: 20px 180px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sec4divh1{
+            color: #747881;
+            width: 700px;
+        }
+        .sec4divh1 h1{
+            color: #1ad1b9;
+            font-size: 43px;
+            font-weight: 300;
+        }
+        .sec4divh1 img{
+            background-color: #d9f7f6;
+        }
+        .twodiv{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .twodiv div{
+            background-color: white;
+            margin: 10px 10px;
+            width: 230px;
+            height: 250px;
+            text-align: center;
+            border: 0px;
+            border-radius: 10px;
+        }
+        .twodiv h1{
+            color: #00c3a5;
+            font-size: 29px;
+            font-weight: 300;
+        }
+        .twodiv p{
+            color: #747881;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <img src="data:image/png;base64,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" alt="">
+            <div>
+               <span> <a href="">About us</a></span>
+                <a href="https://www.docplanner.com/career">Career</a>
+                <a href="">Departments</a>
+            </div>
+        </nav>
+    </header>
+    <section class="sec1">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <p id="p1">Making the healthcare experience more human</p>
+        <div id="towp">
+            <p>We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</p>
+            <p>We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able not only to improve their online presence, but also to devote their time to what really matters: their patients.</p>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="div vert">
+            <h1>For patients</h1>
+            <p>Find a doctor, book a visit and solve any health-related doubt</p>
+
+        </div>
+        <div class="div blue">
+            <h1>For doctors</h1>
+            <p>Save time managing visits and cut no-shows by half</p>
+        </div>
+        <div class="div noir">
+            <h1>For clinics</h1>
+            <p>Deliver an exceptional patient experience in your clinic</p>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="divh1">
+            We are a global company <br> with local culture
+        </div>
+        <div class="divlogo">
+            <a href=""><img src="https://vita.legnica.pl/wp-content/uploads/2021/04/znanylekarz.png" width="80px" height="30px" ></a>
+            <a href=""><img src="https://www.latinpymes.com/wp-content/uploads/2019/11/doctoralia.jpg"width="80px" height="50px" ></a>
+            <a href=""><img src="https://www.miodottore.it/img/it/logo/logo-default-it.svg?v=4" width="80px" height="30px"></a>
+            <a href=""><img src="https://www.doktortakvimi.com/img/tr/logo/logo-default-tr.svg?v=4" width="80px" height="30px"></a> <br>
+            <a href=""><img src="https://vita.legnica.pl/wp-content/uploads/2021/04/znanylekarz.png" width="80px" height="30px"></a>
+            <a href=""><img src="https://logowik.com/content/uploads/images/tuotempo4790.jpg" width="100px" height="80px"></a>
+            <a href=""><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/b8fe1c61980129c62679"width="40px" height="50px" ></a>
+            <a href=""><img src="http://blog.trevenque.es/wp-content/uploads/2017/05/421911_305485116255700_599213072_n-1-202x196.jpg" width="80px" height="50px"></a>
+            <a href=""><img src="https://tukuz.com/wp-content/uploads/2021/03/jameda-gmbh-logo-vector-xs.png"width="100px" height="50px" ></a>
+        </div>
+    </section>
+    <section class="sec4">
+        <div class="sec4divh1">
+            <h1>The world's biggest
+                healthcare platform</h1>
+                <p>We work from 8 offices all over the world, bringing Docplanner Group to life in 13 countries.</p>
+                <img src="https://play-lh.googleusercontent.com/Jl6hJSPZRXhugtjHj0sWeX_IE--hBhHA8GL9RU3N5suklM2x1l01ulh8xSAV_eyE1A=s256-rw" alt="">
+            </div>
+        
+    <div class="twodiv">
+        <div class="sec4div">
+            <h1>Leader in 13 countries</h1>
+            <p>Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>            
+        </div>
+        <div class="sec4div ">
+            <h1>80,000,000
+                patients</h1>
+            <p>visit our websites each month</p>
+        </div>
+    </div>
+    <div class="twodiv">
+        <div class="sec4div">
+            <h1> 7,500,000 appointments</h1>
+                <p> booked last month</p>
+        </div>
+        <div class="sec4div" >
+            <h1>130,000 <br>
+                active doctors</h1>
+                <p>trust our solutions</p>
+        </div>
+    </div>
+    </section>
+    
+</body>
+</html>
